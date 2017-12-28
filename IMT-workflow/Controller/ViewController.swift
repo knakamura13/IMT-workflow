@@ -7,6 +7,10 @@
 //
 
 import UIKit
+
+// Global
+var teamSelection = ""
+
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
@@ -31,22 +35,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     /*
-     *  Change cell color on touch
-    */
-    func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.backgroundColor = UIColor.red
-    }
-    func collectionView(_ collectionView: UICollectionView, didUnhighlightItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.backgroundColor = UIColor.cyan
-    }
-    
-    /*
      * Action: handle cell selection
     */
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // handle tap events
+        teamSelection = items[indexPath[1]] // Save a string holding the selected team name
         performSegue(withIdentifier: "segueToWorkflow", sender: nil)
     }
 }

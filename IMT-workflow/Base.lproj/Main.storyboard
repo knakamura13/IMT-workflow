@@ -31,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="-828" y="33"/>
         </scene>
-        <!--View Controller-->
+        <!--IMT Teams-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IMT_workflow" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,7 +89,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ch1-H8-ZvW"/>
+                    <navigationItem key="navigationItem" title="IMT Teams" id="Ch1-H8-ZvW"/>
                     <connections>
                         <segue destination="Aa8-oQ-RNz" kind="show" identifier="segueToWorkflow" id="3sJ-bT-fEC"/>
                     </connections>
@@ -98,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="33.251231527093594"/>
         </scene>
-        <!--View Controller-->
+        <!--WorkflowVC-->
         <scene sceneID="YrK-7N-Cvy">
             <objects>
-                <viewController id="Aa8-oQ-RNz" sceneMemberID="viewController">
+                <viewController id="Aa8-oQ-RNz" customClass="WorkflowVC" customModule="IMT_workflow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sM2-16-SHc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
