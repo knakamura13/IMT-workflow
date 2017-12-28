@@ -14,6 +14,7 @@
 		BFB00D301FF57D2900B33FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB00D2E1FF57D2900B33FB6 /* LaunchScreen.storyboard */; };
 		BFB00D3B1FF57D2900B33FB6 /* IMT_workflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D3A1FF57D2900B33FB6 /* IMT_workflowTests.swift */; };
 		BFB00D461FF57D2900B33FB6 /* IMT_workflowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D451FF57D2900B33FB6 /* IMT_workflowUITests.swift */; };
+		BFB00D541FF5846300B33FB6 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D531FF5846300B33FB6 /* MyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		BFB00D411FF57D2900B33FB6 /* IMT-workflowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IMT-workflowUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB00D451FF57D2900B33FB6 /* IMT_workflowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMT_workflowUITests.swift; sourceTree = "<group>"; };
 		BFB00D471FF57D2900B33FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB00D531FF5846300B33FB6 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */,
 				BFB00D271FF57D2900B33FB6 /* ViewController.swift */,
+				BFB00D531FF5846300B33FB6 /* MyCollectionViewCell.swift */,
 				BFB00D291FF57D2900B33FB6 /* Main.storyboard */,
 				BFB00D2C1FF57D2900B33FB6 /* Assets.xcassets */,
 				BFB00D2E1FF57D2900B33FB6 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				BFB00D281FF57D2900B33FB6 /* ViewController.swift in Sources */,
 				BFB00D261FF57D2900B33FB6 /* AppDelegate.swift in Sources */,
+				BFB00D541FF5846300B33FB6 /* MyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
