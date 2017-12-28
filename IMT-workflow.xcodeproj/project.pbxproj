@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFB00D261FF57D2900B33FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */; };
+		BFB00D281FF57D2900B33FB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D271FF57D2900B33FB6 /* ViewController.swift */; };
+		BFB00D2B1FF57D2900B33FB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB00D291FF57D2900B33FB6 /* Main.storyboard */; };
+		BFB00D2D1FF57D2900B33FB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB00D2C1FF57D2900B33FB6 /* Assets.xcassets */; };
+		BFB00D301FF57D2900B33FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB00D2E1FF57D2900B33FB6 /* LaunchScreen.storyboard */; };
+		BFB00D3B1FF57D2900B33FB6 /* IMT_workflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D3A1FF57D2900B33FB6 /* IMT_workflowTests.swift */; };
+		BFB00D461FF57D2900B33FB6 /* IMT_workflowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D451FF57D2900B33FB6 /* IMT_workflowUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFB00D371FF57D2900B33FB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFB00D1A1FF57D2900B33FB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFB00D211FF57D2900B33FB6;
+			remoteInfo = "IMT-workflow";
+		};
+		BFB00D421FF57D2900B33FB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFB00D1A1FF57D2900B33FB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFB00D211FF57D2900B33FB6;
+			remoteInfo = "IMT-workflow";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFB00D221FF57D2900B33FB6 /* IMT-workflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMT-workflow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFB00D271FF57D2900B33FB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFB00D2A1FF57D2900B33FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFB00D2C1FF57D2900B33FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFB00D2F1FF57D2900B33FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFB00D311FF57D2900B33FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB00D361FF57D2900B33FB6 /* IMT-workflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IMT-workflowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB00D3A1FF57D2900B33FB6 /* IMT_workflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMT_workflowTests.swift; sourceTree = "<group>"; };
+		BFB00D3C1FF57D2900B33FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB00D411FF57D2900B33FB6 /* IMT-workflowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IMT-workflowUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB00D451FF57D2900B33FB6 /* IMT_workflowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMT_workflowUITests.swift; sourceTree = "<group>"; };
+		BFB00D471FF57D2900B33FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFB00D1F1FF57D2900B33FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFB00D331FF57D2900B33FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFB00D3E1FF57D2900B33FB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFB00D191FF57D2900B33FB6 = {
+			isa = PBXGroup;
+			children = (
+				BFB00D241FF57D2900B33FB6 /* IMT-workflow */,
+				BFB00D391FF57D2900B33FB6 /* IMT-workflowTests */,
+				BFB00D441FF57D2900B33FB6 /* IMT-workflowUITests */,
+				BFB00D231FF57D2900B33FB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFB00D231FF57D2900B33FB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFB00D221FF57D2900B33FB6 /* IMT-workflow.app */,
+				BFB00D361FF57D2900B33FB6 /* IMT-workflowTests.xctest */,
+				BFB00D411FF57D2900B33FB6 /* IMT-workflowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFB00D241FF57D2900B33FB6 /* IMT-workflow */ = {
+			isa = PBXGroup;
+			children = (
+				BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */,
+				BFB00D271FF57D2900B33FB6 /* ViewController.swift */,
+				BFB00D291FF57D2900B33FB6 /* Main.storyboard */,
+				BFB00D2C1FF57D2900B33FB6 /* Assets.xcassets */,
+				BFB00D2E1FF57D2900B33FB6 /* LaunchScreen.storyboard */,
+				BFB00D311FF57D2900B33FB6 /* Info.plist */,
+			);
+			path = "IMT-workflow";
+			sourceTree = "<group>";
+		};
+		BFB00D391FF57D2900B33FB6 /* IMT-workflowTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFB00D3A1FF57D2900B33FB6 /* IMT_workflowTests.swift */,
+				BFB00D3C1FF57D2900B33FB6 /* Info.plist */,
+			);
+			path = "IMT-workflowTests";
+			sourceTree = "<group>";
+		};
+		BFB00D441FF57D2900B33FB6 /* IMT-workflowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFB00D451FF57D2900B33FB6 /* IMT_workflowUITests.swift */,
+				BFB00D471FF57D2900B33FB6 /* Info.plist */,
+			);
+			path = "IMT-workflowUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFB00D211FF57D2900B33FB6 /* IMT-workflow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFB00D4A1FF57D2900B33FB6 /* Build configuration list for PBXNativeTarget "IMT-workflow" */;
+			buildPhases = (
+				BFB00D1E1FF57D2900B33FB6 /* Sources */,
+				BFB00D1F1FF57D2900B33FB6 /* Frameworks */,
+				BFB00D201FF57D2900B33FB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IMT-workflow";
+			productName = "IMT-workflow";
+			productReference = BFB00D221FF57D2900B33FB6 /* IMT-workflow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFB00D351FF57D2900B33FB6 /* IMT-workflowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFB00D4D1FF57D2900B33FB6 /* Build configuration list for PBXNativeTarget "IMT-workflowTests" */;
+			buildPhases = (
+				BFB00D321FF57D2900B33FB6 /* Sources */,
+				BFB00D331FF57D2900B33FB6 /* Frameworks */,
+				BFB00D341FF57D2900B33FB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFB00D381FF57D2900B33FB6 /* PBXTargetDependency */,
+			);
+			name = "IMT-workflowTests";
+			productName = "IMT-workflowTests";
+			productReference = BFB00D361FF57D2900B33FB6 /* IMT-workflowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFB00D401FF57D2900B33FB6 /* IMT-workflowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFB00D501FF57D2900B33FB6 /* Build configuration list for PBXNativeTarget "IMT-workflowUITests" */;
+			buildPhases = (
+				BFB00D3D1FF57D2900B33FB6 /* Sources */,
+				BFB00D3E1FF57D2900B33FB6 /* Frameworks */,
+				BFB00D3F1FF57D2900B33FB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFB00D431FF57D2900B33FB6 /* PBXTargetDependency */,
+			);
+			name = "IMT-workflowUITests";
+			productName = "IMT-workflowUITests";
+			productReference = BFB00D411FF57D2900B33FB6 /* IMT-workflowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFB00D1A1FF57D2900B33FB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Kyle Nakamura";
+				TargetAttributes = {
+					BFB00D211FF57D2900B33FB6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BFB00D351FF57D2900B33FB6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BFB00D211FF57D2900B33FB6;
+					};
+					BFB00D401FF57D2900B33FB6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BFB00D211FF57D2900B33FB6;
+					};
+				};
+			};
+			buildConfigurationList = BFB00D1D1FF57D2900B33FB6 /* Build configuration list for PBXProject "IMT-workflow" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFB00D191FF57D2900B33FB6;
+			productRefGroup = BFB00D231FF57D2900B33FB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFB00D211FF57D2900B33FB6 /* IMT-workflow */,
+				BFB00D351FF57D2900B33FB6 /* IMT-workflowTests */,
+				BFB00D401FF57D2900B33FB6 /* IMT-workflowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFB00D201FF57D2900B33FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB00D301FF57D2900B33FB6 /* LaunchScreen.storyboard in Resources */,
+				BFB00D2D1FF57D2900B33FB6 /* Assets.xcassets in Resources */,
+				BFB00D2B1FF57D2900B33FB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFB00D341FF57D2900B33FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFB00D3F1FF57D2900B33FB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFB00D1E1FF57D2900B33FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB00D281FF57D2900B33FB6 /* ViewController.swift in Sources */,
+				BFB00D261FF57D2900B33FB6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFB00D321FF57D2900B33FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB00D3B1FF57D2900B33FB6 /* IMT_workflowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFB00D3D1FF57D2900B33FB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFB00D461FF57D2900B33FB6 /* IMT_workflowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFB00D381FF57D2900B33FB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFB00D211FF57D2900B33FB6 /* IMT-workflow */;
+			targetProxy = BFB00D371FF57D2900B33FB6 /* PBXContainerItemProxy */;
+		};
+		BFB00D431FF57D2900B33FB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFB00D211FF57D2900B33FB6 /* IMT-workflow */;
+			targetProxy = BFB00D421FF57D2900B33FB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFB00D291FF57D2900B33FB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFB00D2A1FF57D2900B33FB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFB00D2E1FF57D2900B33FB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFB00D2F1FF57D2900B33FB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFB00D481FF57D2900B33FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFB00D491FF57D2900B33FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFB00D4B1FF57D2900B33FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
+				INFOPLIST_FILE = "IMT-workflow/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylenakamura.IMT-workflow";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFB00D4C1FF57D2900B33FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
+				INFOPLIST_FILE = "IMT-workflow/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylenakamura.IMT-workflow";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFB00D4E1FF57D2900B33FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
+				INFOPLIST_FILE = "IMT-workflowTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylenakamura.IMT-workflowTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMT-workflow.app/IMT-workflow";
+			};
+			name = Debug;
+		};
+		BFB00D4F1FF57D2900B33FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
+				INFOPLIST_FILE = "IMT-workflowTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylenakamura.IMT-workflowTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IMT-workflow.app/IMT-workflow";
+			};
+			name = Release;
+		};
+		BFB00D511FF57D2900B33FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
+				INFOPLIST_FILE = "IMT-workflowUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylenakamura.IMT-workflowUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "IMT-workflow";
+			};
+			name = Debug;
+		};
+		BFB00D521FF57D2900B33FB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7GDSF452LB;
+				INFOPLIST_FILE = "IMT-workflowUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kylenakamura.IMT-workflowUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "IMT-workflow";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFB00D1D1FF57D2900B33FB6 /* Build configuration list for PBXProject "IMT-workflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFB00D481FF57D2900B33FB6 /* Debug */,
+				BFB00D491FF57D2900B33FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFB00D4A1FF57D2900B33FB6 /* Build configuration list for PBXNativeTarget "IMT-workflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFB00D4B1FF57D2900B33FB6 /* Debug */,
+				BFB00D4C1FF57D2900B33FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFB00D4D1FF57D2900B33FB6 /* Build configuration list for PBXNativeTarget "IMT-workflowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFB00D4E1FF57D2900B33FB6 /* Debug */,
+				BFB00D4F1FF57D2900B33FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFB00D501FF57D2900B33FB6 /* Build configuration list for PBXNativeTarget "IMT-workflowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFB00D511FF57D2900B33FB6 /* Debug */,
+				BFB00D521FF57D2900B33FB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFB00D1A1FF57D2900B33FB6 /* Project object */;
+}
