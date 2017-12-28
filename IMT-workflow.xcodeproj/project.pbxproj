@@ -15,6 +15,7 @@
 		BFB00D3B1FF57D2900B33FB6 /* IMT_workflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D3A1FF57D2900B33FB6 /* IMT_workflowTests.swift */; };
 		BFB00D461FF57D2900B33FB6 /* IMT_workflowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D451FF57D2900B33FB6 /* IMT_workflowUITests.swift */; };
 		BFB00D541FF5846300B33FB6 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D531FF5846300B33FB6 /* MyCollectionViewCell.swift */; };
+		BFB00D5A1FF589BE00B33FB6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFB00D311FF57D2900B33FB6 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +37,12 @@
 
 /* Begin PBXFileReference section */
 		BFB00D221FF57D2900B33FB6 /* IMT-workflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMT-workflow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "/Users/kylenakamura/Desktop/IMT/projects/iOS/IMT-workflow/IMT-workflow/Util/AppDelegate.swift"; sourceTree = "<absolute>"; };
 		BFB00D271FF57D2900B33FB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFB00D2A1FF57D2900B33FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFB00D2C1FF57D2900B33FB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFB00D2F1FF57D2900B33FB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BFB00D311FF57D2900B33FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFB00D311FF57D2900B33FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/kylenakamura/Desktop/IMT/projects/iOS/IMT-workflow/IMT-workflow/Util/Info.plist"; sourceTree = "<absolute>"; };
 		BFB00D361FF57D2900B33FB6 /* IMT-workflowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IMT-workflowTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB00D3A1FF57D2900B33FB6 /* IMT_workflowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMT_workflowTests.swift; sourceTree = "<group>"; };
 		BFB00D3C1FF57D2900B33FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +100,14 @@
 		BFB00D241FF57D2900B33FB6 /* IMT-workflow */ = {
 			isa = PBXGroup;
 			children = (
-				BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */,
-				BFB00D271FF57D2900B33FB6 /* ViewController.swift */,
-				BFB00D531FF5846300B33FB6 /* MyCollectionViewCell.swift */,
+				BFB00D591FF5893B00B33FB6 /* Constants */,
+				BFB00D581FF5893600B33FB6 /* Util */,
+				BFB00D571FF5892F00B33FB6 /* Model */,
+				BFB00D561FF5892B00B33FB6 /* View */,
+				BFB00D551FF5892400B33FB6 /* Controller */,
 				BFB00D291FF57D2900B33FB6 /* Main.storyboard */,
 				BFB00D2C1FF57D2900B33FB6 /* Assets.xcassets */,
 				BFB00D2E1FF57D2900B33FB6 /* LaunchScreen.storyboard */,
-				BFB00D311FF57D2900B33FB6 /* Info.plist */,
 			);
 			path = "IMT-workflow";
 			sourceTree = "<group>";
@@ -126,6 +128,45 @@
 				BFB00D471FF57D2900B33FB6 /* Info.plist */,
 			);
 			path = "IMT-workflowUITests";
+			sourceTree = "<group>";
+		};
+		BFB00D551FF5892400B33FB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFB00D271FF57D2900B33FB6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFB00D561FF5892B00B33FB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BFB00D531FF5846300B33FB6 /* MyCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFB00D571FF5892F00B33FB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFB00D581FF5893600B33FB6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */,
+				BFB00D311FF57D2900B33FB6 /* Info.plist */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		BFB00D591FF5893B00B33FB6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB00D5A1FF589BE00B33FB6 /* Info.plist in Resources */,
 				BFB00D301FF57D2900B33FB6 /* LaunchScreen.storyboard in Resources */,
 				BFB00D2D1FF57D2900B33FB6 /* Assets.xcassets in Resources */,
 				BFB00D2B1FF57D2900B33FB6 /* Main.storyboard in Resources */,
@@ -432,7 +474,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GDSF452LB;
-				INFOPLIST_FILE = "IMT-workflow/Info.plist";
+				INFOPLIST_FILE = "IMT-workflow/Util/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kylenakamura.IMT-workflow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,7 +489,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7GDSF452LB;
-				INFOPLIST_FILE = "IMT-workflow/Info.plist";
+				INFOPLIST_FILE = "IMT-workflow/Util/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kylenakamura.IMT-workflow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
