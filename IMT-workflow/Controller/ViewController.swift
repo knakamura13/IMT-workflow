@@ -15,8 +15,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
+    let reuseIdentifier = "cell"
     var items = ["IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team"]
+    
+    override func prefersHomeIndicatorAutoHidden() -> Bool {
+        return true
+    }
     
     override func viewDidLoad() {
         //Define Layout here
