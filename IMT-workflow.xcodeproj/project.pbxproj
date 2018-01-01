@@ -10,6 +10,7 @@
 		BF9ACC801FF9C24B00D75A2E /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC7F1FF9C24B00D75A2E /* Step.swift */; };
 		BF9ACC821FF9C25900D75A2E /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC811FF9C25900D75A2E /* Issue.swift */; };
 		BF9ACC841FF9C4ED00D75A2E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC831FF9C4ED00D75A2E /* MyTableViewCell.swift */; };
+		BF9ACC861FF9E6BF00D75A2E /* StepsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC851FF9E6BF00D75A2E /* StepsVC.swift */; };
 		BFB00D261FF57D2900B33FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */; };
 		BFB00D281FF57D2900B33FB6 /* TeamsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D271FF57D2900B33FB6 /* TeamsVC.swift */; };
 		BFB00D2B1FF57D2900B33FB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB00D291FF57D2900B33FB6 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		BF9ACC7F1FF9C24B00D75A2E /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		BF9ACC811FF9C25900D75A2E /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		BF9ACC831FF9C4ED00D75A2E /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		BF9ACC851FF9E6BF00D75A2E /* StepsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsVC.swift; sourceTree = "<group>"; };
 		BFB00D221FF57D2900B33FB6 /* IMT-workflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMT-workflow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "/Users/kylenakamura/Desktop/IMT/projects/iOS/IMT-workflow/IMT-workflow/Util/AppDelegate.swift"; sourceTree = "<absolute>"; };
 		BFB00D271FF57D2900B33FB6 /* TeamsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsVC.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			children = (
 				BFB00D271FF57D2900B33FB6 /* TeamsVC.swift */,
 				BFB00D5B1FF591D000B33FB6 /* IssuesVC.swift */,
+				BF9ACC851FF9E6BF00D75A2E /* StepsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,8 +171,8 @@
 		BFB00D581FF5893600B33FB6 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */,
 				BFB00D311FF57D2900B33FB6 /* Info.plist */,
+				BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9ACC861FF9E6BF00D75A2E /* StepsVC.swift in Sources */,
 				BF9ACC841FF9C4ED00D75A2E /* MyTableViewCell.swift in Sources */,
 				BFB00D281FF57D2900B33FB6 /* TeamsVC.swift in Sources */,
 				BFB00D261FF57D2900B33FB6 /* AppDelegate.swift in Sources */,
