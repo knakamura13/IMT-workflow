@@ -16,21 +16,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet weak var collectionView: UICollectionView!
     
     let reuseIdentifier = "cell"
-    var items = ["IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team"]
-    
-    override func prefersHomeIndicatorAutoHidden() -> Bool {
-        return true
-    }
+    let items = ["Media: \nClassroom Tech", "Media: \nEvent Support", "Device Solutions: \nField Support", "Device Solutions: \nLab Support", "Support Desk: \nFront Desk", "Support Desk: \nCall Center"]
     
     override func viewDidLoad() {
         //Define Layout here
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        let width = UIScreen.main.bounds.width - 2
+        let width = UIScreen.main.bounds.width * 0.8
         
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        layout.itemSize = CGSize(width: width / 2, height: width / 2)
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 0, bottom: 0, right: 0)
+        layout.itemSize = CGSize(width: width, height: width/2)
         layout.minimumInteritemSpacing = 0
-        layout.minimumLineSpacing = 2
+        layout.minimumLineSpacing = 20
         
         collectionView!.collectionViewLayout = layout
     }
@@ -44,6 +40,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! MyCollectionViewCell
         cell.myLabel.text = self.items[indexPath.item]
+        cell.clipsToBounds = false
+        cell.layer.masksToBounds = false
+        
+        cell.layer.cornerRadius = 5
+        cell.layer.shadowRadius = 5
+        cell.layer.shadowOpacity = 0.5
+        cell.layer.shadowOffset = CGSize(width: 1, height: 6)
+        cell.layer.shadowColor = UIColor(red: 95/256, green: 0, blue: 0, alpha: 1).cgColor
         
         return cell
     }
@@ -53,4 +57,19 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         teamSelection = items[indexPath[1]] // Save a string holding the selected team name
         performSegue(withIdentifier: "segueToWorkflow", sender: nil)
     }
+    
+    // Hide home bar on iPhone X
+    override func prefersHomeIndicatorAutoHidden() -> Bool {
+        return true
+    }
 }
+
+extension UICollectionView {
+    func roundCorners(_ corners:UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
+    }
+}
+

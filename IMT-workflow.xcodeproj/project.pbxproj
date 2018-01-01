@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF9ACC801FF9C24B00D75A2E /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC7F1FF9C24B00D75A2E /* Step.swift */; };
+		BF9ACC821FF9C25900D75A2E /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC811FF9C25900D75A2E /* Issue.swift */; };
+		BF9ACC841FF9C4ED00D75A2E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC831FF9C4ED00D75A2E /* MyTableViewCell.swift */; };
 		BFB00D261FF57D2900B33FB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */; };
 		BFB00D281FF57D2900B33FB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D271FF57D2900B33FB6 /* ViewController.swift */; };
 		BFB00D2B1FF57D2900B33FB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFB00D291FF57D2900B33FB6 /* Main.storyboard */; };
@@ -16,7 +19,7 @@
 		BFB00D461FF57D2900B33FB6 /* IMT_workflowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D451FF57D2900B33FB6 /* IMT_workflowUITests.swift */; };
 		BFB00D541FF5846300B33FB6 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D531FF5846300B33FB6 /* MyCollectionViewCell.swift */; };
 		BFB00D5A1FF589BE00B33FB6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFB00D311FF57D2900B33FB6 /* Info.plist */; };
-		BFB00D5C1FF591D000B33FB6 /* WorkflowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D5B1FF591D000B33FB6 /* WorkflowVC.swift */; };
+		BFB00D5C1FF591D000B33FB6 /* IssuesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D5B1FF591D000B33FB6 /* IssuesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF9ACC7F1FF9C24B00D75A2E /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		BF9ACC811FF9C25900D75A2E /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		BF9ACC831FF9C4ED00D75A2E /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		BFB00D221FF57D2900B33FB6 /* IMT-workflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IMT-workflow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB00D251FF57D2900B33FB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "/Users/kylenakamura/Desktop/IMT/projects/iOS/IMT-workflow/IMT-workflow/Util/AppDelegate.swift"; sourceTree = "<absolute>"; };
 		BFB00D271FF57D2900B33FB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +57,7 @@
 		BFB00D451FF57D2900B33FB6 /* IMT_workflowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMT_workflowUITests.swift; sourceTree = "<group>"; };
 		BFB00D471FF57D2900B33FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFB00D531FF5846300B33FB6 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
-		BFB00D5B1FF591D000B33FB6 /* WorkflowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkflowVC.swift; sourceTree = "<group>"; };
+		BFB00D5B1FF591D000B33FB6 /* IssuesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +114,8 @@
 				BFB00D561FF5892B00B33FB6 /* View */,
 				BFB00D551FF5892400B33FB6 /* Controller */,
 				BFB00D291FF57D2900B33FB6 /* Main.storyboard */,
-				BFB00D2C1FF57D2900B33FB6 /* Assets.xcassets */,
 				BFB00D2E1FF57D2900B33FB6 /* LaunchScreen.storyboard */,
+				BFB00D2C1FF57D2900B33FB6 /* Assets.xcassets */,
 			);
 			path = "IMT-workflow";
 			sourceTree = "<group>";
@@ -136,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				BFB00D271FF57D2900B33FB6 /* ViewController.swift */,
-				BFB00D5B1FF591D000B33FB6 /* WorkflowVC.swift */,
+				BFB00D5B1FF591D000B33FB6 /* IssuesVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				BFB00D531FF5846300B33FB6 /* MyCollectionViewCell.swift */,
+				BF9ACC831FF9C4ED00D75A2E /* MyTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +159,8 @@
 		BFB00D571FF5892F00B33FB6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BF9ACC811FF9C25900D75A2E /* Issue.swift */,
+				BF9ACC7F1FF9C24B00D75A2E /* Step.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,10 +316,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9ACC841FF9C4ED00D75A2E /* MyTableViewCell.swift in Sources */,
 				BFB00D281FF57D2900B33FB6 /* ViewController.swift in Sources */,
 				BFB00D261FF57D2900B33FB6 /* AppDelegate.swift in Sources */,
+				BF9ACC801FF9C24B00D75A2E /* Step.swift in Sources */,
 				BFB00D541FF5846300B33FB6 /* MyCollectionViewCell.swift in Sources */,
-				BFB00D5C1FF591D000B33FB6 /* WorkflowVC.swift in Sources */,
+				BFB00D5C1FF591D000B33FB6 /* IssuesVC.swift in Sources */,
+				BF9ACC821FF9C25900D75A2E /* Issue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
