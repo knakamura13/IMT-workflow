@@ -13,8 +13,23 @@ var teamSelection = ""
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
     var items = ["IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team", "IMT Team"]
+    
+    override func viewDidLoad() {
+        //Define Layout here
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        let width = UIScreen.main.bounds.width - 2
+        
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        layout.itemSize = CGSize(width: width / 2, height: width / 2)
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 2
+        
+        collectionView!.collectionViewLayout = layout
+    }
     
     // Set number of cells
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -24,22 +39,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     // Create cell for each index path
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! MyCollectionViewCell
-        
-        // Update colors
         cell.myLabel.text = self.items[indexPath.item]
-        cell.layer.borderColor = UIColor.black.cgColor
-        cell.layer.borderWidth = 1
-        cell.layer.cornerRadius = 8
         
         return cell
     }
     
-    /*
-     * Action: handle cell selection
-    */
+    // Action: handle cell selection
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         teamSelection = items[indexPath[1]] // Save a string holding the selected team name
         performSegue(withIdentifier: "segueToWorkflow", sender: nil)
     }
 }
-
