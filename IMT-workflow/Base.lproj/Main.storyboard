@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="-828" y="33"/>
         </scene>
-        <!--IMT Teams-->
+        <!--Teams-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IMT_workflow" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TeamsVC" customModule="IMT_workflow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,7 +93,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="IMT Teams" id="Ch1-H8-ZvW"/>
+                    <navigationItem key="navigationItem" title="Teams" id="Ch1-H8-ZvW"/>
                     <connections>
                         <outlet property="collectionView" destination="SRr-Vf-ykj" id="cfY-bN-d2m"/>
                         <segue destination="Aa8-oQ-RNz" kind="show" identifier="segueToWorkflow" id="3sJ-bT-fEC"/>

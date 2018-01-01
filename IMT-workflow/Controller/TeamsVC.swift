@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TeamsVC.swift
 //  IMT-workflow
 //
 //  Created by Kyle Nakamura on 12/28/17.
@@ -11,7 +11,7 @@ import UIKit
 // Global
 var teamSelection = ""
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class TeamsVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -54,7 +54,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     // Action: handle cell selection
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        teamSelection = items[indexPath[1]] // Save a string holding the selected team name
+        let trimmed = items[indexPath[1]].replacingOccurrences(of: "\\n*", with: "", options: .regularExpression).components(separatedBy: ": ")
+        teamSelection = trimmed[1] // Save a string holding the selected team name
         performSegue(withIdentifier: "segueToWorkflow", sender: nil)
     }
     
