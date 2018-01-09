@@ -31,9 +31,9 @@ class StepsVC: UIViewController {
         btn.layer.masksToBounds = false
         btn.layer.cornerRadius = 5
         btn.layer.shadowRadius = 5
-        btn.layer.shadowOpacity = 0.5
+        btn.layer.shadowOpacity = 0.4
         btn.layer.shadowOffset = CGSize(width: 1, height: 2)
-        btn.layer.shadowColor = UIColor(red: 60/256, green: 0, blue: 0, alpha: 1).cgColor
+        btn.layer.shadowColor = UIColor.black.cgColor
     }
     
     // Actions

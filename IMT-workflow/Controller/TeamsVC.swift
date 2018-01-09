@@ -49,9 +49,9 @@ class TeamsVC: UIViewController, UICollectionViewDataSource, UICollectionViewDel
         cell.layer.masksToBounds = false
         cell.layer.cornerRadius = 5
         cell.layer.shadowRadius = 5
-        cell.layer.shadowOpacity = 0.5
+        cell.layer.shadowOpacity = 0.4
         cell.layer.shadowOffset = CGSize(width: 1, height: 6)
-        cell.layer.shadowColor = UIColor(red: 60/256, green: 0, blue: 0, alpha: 1).cgColor
+        cell.layer.shadowColor = UIColor.black.cgColor
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

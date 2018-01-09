@@ -121,7 +121,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Search" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNg-Cu-D3k">
+                            <searchBar hidden="YES" contentMode="redraw" placeholder="Search" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNg-Cu-D3k">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="D7R-9A-ful"/>
@@ -133,7 +133,7 @@
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mfd-HT-mUE">
-                                <rect key="frame" x="0.0" y="56" width="375" height="668"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="issueCell" rowHeight="66" id="EvI-7o-IWF" customClass="MyTableViewCell" customModule="IMT_workflow" customModuleProvider="target">
@@ -207,8 +207,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gNg-Cu-D3k" firstAttribute="trailing" secondItem="SdE-ca-17F" secondAttribute="trailing" id="4PK-D6-vt6"/>
-                            <constraint firstItem="mfd-HT-mUE" firstAttribute="top" secondItem="gNg-Cu-D3k" secondAttribute="bottom" id="Fuc-XI-SrP"/>
                             <constraint firstItem="mfd-HT-mUE" firstAttribute="trailing" secondItem="SdE-ca-17F" secondAttribute="trailing" id="HDc-4V-UTT"/>
+                            <constraint firstItem="mfd-HT-mUE" firstAttribute="top" secondItem="SdE-ca-17F" secondAttribute="top" id="cgd-3l-ZS4"/>
                             <constraint firstItem="mfd-HT-mUE" firstAttribute="leading" secondItem="SdE-ca-17F" secondAttribute="leading" id="wzR-P7-7Jp"/>
                             <constraint firstAttribute="bottom" secondItem="mfd-HT-mUE" secondAttribute="bottom" id="yHH-Ae-9Pf"/>
                             <constraint firstItem="gNg-Cu-D3k" firstAttribute="leading" secondItem="SdE-ca-17F" secondAttribute="leading" id="zOh-uC-ths"/>
