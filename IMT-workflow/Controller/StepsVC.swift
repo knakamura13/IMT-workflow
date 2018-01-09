@@ -15,6 +15,7 @@ class StepsVC: UIViewController {
     @IBOutlet weak var btnNo: UIControl!
     
     // Variables
+    var currentStep: Step
     
     override func viewDidLoad() {
         super.viewDidLoad()
