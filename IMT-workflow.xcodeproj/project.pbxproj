@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1E2C212007CC40000FE331 /* Initialized_Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E2C202007CC40000FE331 /* Initialized_Steps.swift */; };
 		BF9ACC801FF9C24B00D75A2E /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC7F1FF9C24B00D75A2E /* Step.swift */; };
 		BF9ACC821FF9C25900D75A2E /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC811FF9C25900D75A2E /* Issue.swift */; };
 		BF9ACC841FF9C4ED00D75A2E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC831FF9C4ED00D75A2E /* MyTableViewCell.swift */; };
@@ -19,7 +20,6 @@
 		BFB00D3B1FF57D2900B33FB6 /* IMT_workflowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D3A1FF57D2900B33FB6 /* IMT_workflowTests.swift */; };
 		BFB00D461FF57D2900B33FB6 /* IMT_workflowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D451FF57D2900B33FB6 /* IMT_workflowUITests.swift */; };
 		BFB00D541FF5846300B33FB6 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D531FF5846300B33FB6 /* MyCollectionViewCell.swift */; };
-		BFB00D5A1FF589BE00B33FB6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFB00D311FF57D2900B33FB6 /* Info.plist */; };
 		BFB00D5C1FF591D000B33FB6 /* IssuesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB00D5B1FF591D000B33FB6 /* IssuesVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF1E2C202007CC40000FE331 /* Initialized_Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initialized_Steps.swift; sourceTree = "<group>"; };
 		BF9ACC7F1FF9C24B00D75A2E /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		BF9ACC811FF9C25900D75A2E /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		BF9ACC831FF9C4ED00D75A2E /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
@@ -164,6 +165,7 @@
 			children = (
 				BF9ACC811FF9C25900D75A2E /* Issue.swift */,
 				BF9ACC7F1FF9C24B00D75A2E /* Step.swift */,
+				BF1E2C202007CC40000FE331 /* Initialized_Steps.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,7 +293,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFB00D5A1FF589BE00B33FB6 /* Info.plist in Resources */,
 				BFB00D301FF57D2900B33FB6 /* LaunchScreen.storyboard in Resources */,
 				BFB00D2D1FF57D2900B33FB6 /* Assets.xcassets in Resources */,
 				BFB00D2B1FF57D2900B33FB6 /* Main.storyboard in Resources */,
@@ -324,6 +325,7 @@
 				BFB00D281FF57D2900B33FB6 /* TeamsVC.swift in Sources */,
 				BFB00D261FF57D2900B33FB6 /* AppDelegate.swift in Sources */,
 				BF9ACC801FF9C24B00D75A2E /* Step.swift in Sources */,
+				BF1E2C212007CC40000FE331 /* Initialized_Steps.swift in Sources */,
 				BFB00D541FF5846300B33FB6 /* MyCollectionViewCell.swift in Sources */,
 				BFB00D5C1FF591D000B33FB6 /* IssuesVC.swift in Sources */,
 				BF9ACC821FF9C25900D75A2E /* Issue.swift in Sources */,

@@ -10,13 +10,12 @@ import UIKit
 
 class Step {
     // Base variables
-    fileprivate var _image: UIImage = #imageLiteral(resourceName: "arrow-right")
-    fileprivate var _title: String = "Title"
-    fileprivate var _text: String = "Have you tried turning it off and on again?"
-    fileprivate var _options: [String] = ["Yes", "No"]
-    fileprivate var _index: Int = 0
-    fileprivate var _prev: Int = 0
-    fileprivate var _next: Int = 0
+    fileprivate var _image: UIImage = #imageLiteral(resourceName: "imt-square")                                            // Image for the Step, if necessary
+    fileprivate var _title: String = "Title"                                        // The issue name or title
+    fileprivate var _text: String = "Have you tried turning it off and on again?"   // The main question or instructions for the Step
+    fileprivate var _options: [String : Int] = ["Yes" : 1, "No" : 2]                // Dictionary of options/buttons and a correesponding index for navigation
+    fileprivate var _index: Int = 0                                                 // Unique index for each Step
+    fileprivate var _prev: Int = 0                                                  // Index of the most recently viewed Step
     
     // Getters
     var image: UIImage {
@@ -43,7 +42,7 @@ class Step {
             _text = value
         }
     }
-    var options: [String] {
+    var options: [String : Int] {
         get {
             return _options
         }
@@ -67,23 +66,14 @@ class Step {
             _prev = value
         }
     }
-    var next: Int {
-        get {
-            return _next
-        }
-        set(value) {
-            _next = value
-        }
-    }
     
     // Initializer
-    init(image: UIImage, title: String, text: String, options: [String], index: Int, prev: Int, next: Int) {
+    init(image: UIImage, title: String, text: String, options: [String : Int], index: Int, prev: Int) {
         self._image = image
         self._title = title
         self._text = text
         self._options = options
         self._index = index
         self._prev = prev
-        self._next = next
     }
 }
