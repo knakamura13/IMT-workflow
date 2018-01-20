@@ -10,7 +10,7 @@ import UIKit
 
 class Step {
     // Base variables
-    fileprivate var _image: UIImage = #imageLiteral(resourceName: "imt-square")                                            // Image for the Step, if necessary
+    fileprivate var _image: UIImage                                                 // Image for the Step, if necessary
     fileprivate var _title: String = "Title"                                        // The issue name or title
     fileprivate var _text: String = "Have you tried turning it off and on again?"   // The main question or instructions for the Step
     fileprivate var _options: [String : Int] = ["Yes" : 1, "No" : 2]                // Dictionary of options/buttons and a correesponding index for navigation
