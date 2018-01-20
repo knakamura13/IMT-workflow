@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF1E2C212007CC40000FE331 /* Initialized_Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E2C202007CC40000FE331 /* Initialized_Steps.swift */; };
+		BF45B82E20135DAE007D0CF8 /* PopImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45B82D20135DAE007D0CF8 /* PopImageVC.swift */; };
 		BF9ACC801FF9C24B00D75A2E /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC7F1FF9C24B00D75A2E /* Step.swift */; };
 		BF9ACC821FF9C25900D75A2E /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC811FF9C25900D75A2E /* Issue.swift */; };
 		BF9ACC841FF9C4ED00D75A2E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC831FF9C4ED00D75A2E /* MyTableViewCell.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		BF1E2C202007CC40000FE331 /* Initialized_Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initialized_Steps.swift; sourceTree = "<group>"; };
+		BF45B82D20135DAE007D0CF8 /* PopImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopImageVC.swift; sourceTree = "<group>"; };
 		BF9ACC7F1FF9C24B00D75A2E /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		BF9ACC811FF9C25900D75A2E /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		BF9ACC831FF9C4ED00D75A2E /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				BFB00D271FF57D2900B33FB6 /* TeamsVC.swift */,
 				BFB00D5B1FF591D000B33FB6 /* IssuesVC.swift */,
 				BF9ACC851FF9E6BF00D75A2E /* StepsVC.swift */,
+				BF45B82D20135DAE007D0CF8 /* PopImageVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				BF1E2C212007CC40000FE331 /* Initialized_Steps.swift in Sources */,
 				BFB00D541FF5846300B33FB6 /* MyCollectionViewCell.swift in Sources */,
 				BFB00D5C1FF591D000B33FB6 /* IssuesVC.swift in Sources */,
+				BF45B82E20135DAE007D0CF8 /* PopImageVC.swift in Sources */,
 				BF9ACC821FF9C25900D75A2E /* Issue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

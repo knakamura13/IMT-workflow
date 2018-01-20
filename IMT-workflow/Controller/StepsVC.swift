@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StepsVC: UIViewController {
+class StepsVC: UIViewController, UIViewControllerPreviewingDelegate {
 
     // Outlets
     @IBOutlet weak var stepTxtLbl: UILabel!
@@ -38,6 +38,24 @@ class StepsVC: UIViewController {
         btnBLbl.text = currentStepOptions[1]
         btnCLbl.text = currentStepOptions[1]
         btnDLbl.text = currentStepOptions[1]
+        
+        // Check if device has force touch screen
+        if (traitCollection.forceTouchCapability == .available){
+            registerForPreviewing(with: self as! UIViewControllerPreviewingDelegate, sourceView: view)
+        } else {
+//            let longPress = UILongPressGestureRecognizer(target: self, action: "longPressHandler:")
+//            stepImg.addGestureRecognizer(longPress)
+        }
+    }
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        previewingContext.sourceRect = CGRect(origin: CGPoint(x: stepImg.frame.origin.x, y: stepImg.frame.origin.y), size: CGSize(width: stepImg.frame.width, height: stepImg.frame.height))
+        return PopImageVC()
+    }
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+//        present(PopImageVC(), animated: true, completion: nil)
+        performSegue(withIdentifier: "PopImageSegue", sender: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
