@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="18p-Au-Pjv">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,11 +49,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TeamsVC" customModule="IMT_workflow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SRr-Vf-ykj">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="80A-OJ-0u3">
                                     <size key="itemSize" width="375" height="122"/>
@@ -118,7 +119,7 @@
             <objects>
                 <viewController title="Team Issues" id="Aa8-oQ-RNz" customClass="IssuesVC" customModule="IMT_workflow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sM2-16-SHc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar hidden="YES" contentMode="redraw" placeholder="Search" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNg-Cu-D3k">
@@ -133,7 +134,7 @@
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mfd-HT-mUE">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="issueCell" rowHeight="66" id="EvI-7o-IWF" customClass="MyTableViewCell" customModule="IMT_workflow" customModuleProvider="target">
@@ -179,6 +180,7 @@
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="mzK-GJ-njg" secondAttribute="trailing" constant="12" id="84E-Ex-a95"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uB4-NW-s5l" secondAttribute="trailing" constant="20" symbolic="YES" id="Dgd-Gh-P0C"/>
                                                         <constraint firstItem="mzK-GJ-njg" firstAttribute="centerY" secondItem="FBm-Em-1rj" secondAttribute="centerY" id="HIP-Nw-fzi"/>
                                                         <constraint firstItem="uB4-NW-s5l" firstAttribute="centerY" secondItem="FBm-Em-1rj" secondAttribute="centerY" id="IZD-Yr-2F2"/>
                                                         <constraint firstItem="uB4-NW-s5l" firstAttribute="leading" secondItem="FBm-Em-1rj" secondAttribute="leading" constant="15" id="JGo-YM-yuL"/>
@@ -233,60 +235,55 @@
             <objects>
                 <viewController id="3CW-QM-BRO" customClass="StepsVC" customModule="IMT_workflow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JVr-dO-XiR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMp-OA-Mt4" userLabel="topView">
-                                <rect key="frame" x="0.0" y="0.0" width="232" height="222"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="g8J-Tv-ywX">
-                                        <rect key="frame" x="0.0" y="0.0" width="232" height="222"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYR-Cf-VBx">
-                                                <rect key="frame" x="0.0" y="0.0" width="232" height="105"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="105" id="Rcd-m8-7f0"/>
-                                                </constraints>
-                                                <string key="text">Have you turned it off 
-and on again? and again and again</string>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
-                                                <nil key="highlightedColor"/>
-                                                <color key="shadowColor" white="0.0" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <size key="shadowOffset" width="1.5" height="1.5"/>
-                                            </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c5v-nW-S7u">
-                                                <rect key="frame" x="36" y="117" width="160" height="105"/>
-                                            </imageView>
-                                        </subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOy-U4-uxe">
+                                        <rect key="frame" x="30" y="20" width="260" height="72"/>
+                                        <string key="text">Label
+Label
+Label</string>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nev-8d-PjP">
+                                        <rect key="frame" x="105" y="100" width="110" height="112"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="PYR-Cf-VBx" secondAttribute="trailing" id="Wtm-In-efg"/>
-                                            <constraint firstItem="PYR-Cf-VBx" firstAttribute="top" secondItem="g8J-Tv-ywX" secondAttribute="top" id="azC-nl-Y3Q"/>
-                                            <constraint firstItem="PYR-Cf-VBx" firstAttribute="leading" secondItem="g8J-Tv-ywX" secondAttribute="leading" id="sUy-nI-6rN"/>
+                                            <constraint firstAttribute="width" secondItem="nev-8d-PjP" secondAttribute="height" multiplier="1:1" id="RkL-z5-zCb"/>
+                                            <constraint firstAttribute="width" constant="100" id="zLK-Mj-Bf5"/>
                                         </constraints>
-                                    </stackView>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="g8J-Tv-ywX" secondAttribute="bottom" id="akh-4o-3qY"/>
-                                    <constraint firstItem="g8J-Tv-ywX" firstAttribute="leading" secondItem="xMp-OA-Mt4" secondAttribute="leading" id="fV3-wJ-OUb"/>
-                                    <constraint firstItem="g8J-Tv-ywX" firstAttribute="top" secondItem="xMp-OA-Mt4" secondAttribute="top" id="goM-ie-Yot"/>
-                                    <constraint firstAttribute="trailing" secondItem="g8J-Tv-ywX" secondAttribute="trailing" id="lrt-KG-tQk"/>
+                                    <constraint firstItem="bOy-U4-uxe" firstAttribute="leading" secondItem="xMp-OA-Mt4" secondAttribute="leading" constant="30" id="7ga-e9-pRn"/>
+                                    <constraint firstAttribute="trailing" secondItem="bOy-U4-uxe" secondAttribute="trailing" constant="30" id="ARn-M0-FRx"/>
+                                    <constraint firstAttribute="height" constant="270" id="Kfp-4R-k61"/>
+                                    <constraint firstItem="nev-8d-PjP" firstAttribute="centerX" secondItem="xMp-OA-Mt4" secondAttribute="centerX" id="ZXn-cA-gKu"/>
+                                    <constraint firstItem="bOy-U4-uxe" firstAttribute="top" secondItem="xMp-OA-Mt4" secondAttribute="top" constant="20" id="aeL-3Y-pyT"/>
+                                    <constraint firstItem="nev-8d-PjP" firstAttribute="width" secondItem="xMp-OA-Mt4" secondAttribute="width" multiplier="0.5" id="bdR-xM-zEN"/>
+                                    <constraint firstItem="nev-8d-PjP" firstAttribute="top" secondItem="bOy-U4-uxe" secondAttribute="bottom" constant="12" id="mvy-e2-Sw1"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syH-7P-ao6" userLabel="bottomView">
-                                <rect key="frame" x="0.0" y="282" width="232" height="222"/>
+                                <rect key="frame" x="0.0" y="270" width="320" height="146"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="UL6-fm-viA">
-                                        <rect key="frame" x="30" y="20" width="172" height="172"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UL6-fm-viA">
+                                        <rect key="frame" x="50" y="-37" width="220" height="153"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Zge-LX-aic">
-                                                <rect key="frame" x="0.0" y="0.0" width="172" height="71"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Zge-LX-aic">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="66.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFg-Ct-1Zt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="66.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urz-3j-zja">
-                                                                <rect key="frame" x="8" y="8" width="55" height="55"/>
+                                                                <rect key="frame" x="8" y="8" width="84" height="50.5"/>
                                                                 <gestureRecognizers/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -299,7 +296,7 @@ and on again? and again and again</string>
                                                             <constraint firstAttribute="bottom" secondItem="Urz-3j-zja" secondAttribute="bottom" constant="8" id="3C3-fy-0IQ"/>
                                                             <constraint firstItem="Urz-3j-zja" firstAttribute="top" secondItem="NFg-Ct-1Zt" secondAttribute="top" constant="8" id="Cmx-Ie-ELx"/>
                                                             <constraint firstAttribute="trailing" secondItem="Urz-3j-zja" secondAttribute="trailing" constant="8" id="Hpz-UU-UUw"/>
-                                                            <constraint firstAttribute="width" secondItem="NFg-Ct-1Zt" secondAttribute="height" multiplier="1:1" id="WZv-mk-T3n"/>
+                                                            <constraint firstAttribute="width" secondItem="NFg-Ct-1Zt" secondAttribute="height" multiplier="3:2" id="WZv-mk-T3n"/>
                                                             <constraint firstItem="Urz-3j-zja" firstAttribute="leading" secondItem="NFg-Ct-1Zt" secondAttribute="leading" constant="8" id="tZi-2t-1pH"/>
                                                         </constraints>
                                                         <connections>
@@ -308,10 +305,10 @@ and on again? and again and again</string>
                                                         </connections>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7h-OC-EVR">
-                                                        <rect key="frame" x="101" y="0.0" width="71" height="71"/>
+                                                        <rect key="frame" x="120" y="0.0" width="100" height="66.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdS-R7-Wwz">
-                                                                <rect key="frame" x="8" y="8" width="55" height="55"/>
+                                                                <rect key="frame" x="8" y="8" width="83.5" height="50.5"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -322,7 +319,6 @@ and on again? and again and again</string>
                                                         <constraints>
                                                             <constraint firstItem="rdS-R7-Wwz" firstAttribute="leading" secondItem="C7h-OC-EVR" secondAttribute="leading" constant="8" id="Fj1-yq-VQS"/>
                                                             <constraint firstItem="rdS-R7-Wwz" firstAttribute="top" secondItem="C7h-OC-EVR" secondAttribute="top" constant="8" id="YPo-1g-JqJ"/>
-                                                            <constraint firstAttribute="width" secondItem="C7h-OC-EVR" secondAttribute="height" multiplier="1:1" id="dry-T2-OE1"/>
                                                             <constraint firstAttribute="bottom" secondItem="rdS-R7-Wwz" secondAttribute="bottom" constant="8" id="iU3-rv-wMU"/>
                                                             <constraint firstAttribute="trailing" secondItem="rdS-R7-Wwz" secondAttribute="trailing" constant="8" id="rw9-Qc-BlR"/>
                                                         </constraints>
@@ -332,15 +328,19 @@ and on again? and again and again</string>
                                                         </connections>
                                                     </view>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="C7h-OC-EVR" firstAttribute="width" secondItem="NFg-Ct-1Zt" secondAttribute="width" id="5CC-iX-y3l"/>
+                                                    <constraint firstItem="C7h-OC-EVR" firstAttribute="height" secondItem="NFg-Ct-1Zt" secondAttribute="height" id="eIu-6E-J9R"/>
+                                                </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5Fs-J9-Tg0">
-                                                <rect key="frame" x="0.0" y="101" width="172" height="71"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5Fs-J9-Tg0">
+                                                <rect key="frame" x="0.0" y="86.5" width="220" height="66.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ij9-wS-Q4s">
-                                                        <rect key="frame" x="0.0" y="0.0" width="71" height="71"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="66.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDe-bq-74Z">
-                                                                <rect key="frame" x="8" y="8" width="55" height="55"/>
+                                                                <rect key="frame" x="8" y="8" width="84" height="50.5"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -351,7 +351,6 @@ and on again? and again and again</string>
                                                         <constraints>
                                                             <constraint firstItem="ZDe-bq-74Z" firstAttribute="leading" secondItem="Ij9-wS-Q4s" secondAttribute="leading" constant="8" id="b6D-C6-Zxm"/>
                                                             <constraint firstItem="ZDe-bq-74Z" firstAttribute="top" secondItem="Ij9-wS-Q4s" secondAttribute="top" constant="8" id="cd0-n5-hHP"/>
-                                                            <constraint firstAttribute="width" secondItem="Ij9-wS-Q4s" secondAttribute="height" multiplier="1:1" id="jYs-ik-kf9"/>
                                                             <constraint firstAttribute="bottom" secondItem="ZDe-bq-74Z" secondAttribute="bottom" constant="8" id="oau-TG-JXm"/>
                                                             <constraint firstAttribute="trailing" secondItem="ZDe-bq-74Z" secondAttribute="trailing" constant="8" id="zoM-lo-sfa"/>
                                                         </constraints>
@@ -361,10 +360,10 @@ and on again? and again and again</string>
                                                         </connections>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1tm-vj-TYj">
-                                                        <rect key="frame" x="101" y="0.0" width="71" height="71"/>
+                                                        <rect key="frame" x="120" y="0.0" width="100" height="66.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VX-cN-6aQ">
-                                                                <rect key="frame" x="8" y="8" width="55" height="55"/>
+                                                                <rect key="frame" x="8" y="8" width="83.5" height="50.5"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -377,7 +376,6 @@ and on again? and again and again</string>
                                                             <constraint firstItem="3VX-cN-6aQ" firstAttribute="leading" secondItem="1tm-vj-TYj" secondAttribute="leading" constant="8" id="AEj-6e-fSe"/>
                                                             <constraint firstAttribute="bottom" secondItem="3VX-cN-6aQ" secondAttribute="bottom" constant="8" id="Led-hu-sCL"/>
                                                             <constraint firstAttribute="trailing" secondItem="3VX-cN-6aQ" secondAttribute="trailing" constant="8" id="hrI-8v-JkF"/>
-                                                            <constraint firstAttribute="width" secondItem="1tm-vj-TYj" secondAttribute="height" multiplier="1:1" id="uwM-GV-zeg"/>
                                                         </constraints>
                                                         <connections>
                                                             <action selector="btnDPressed:" destination="Dds-xB-Y5g" eventType="touchUpInside" id="8Ab-7u-YRN"/>
@@ -385,28 +383,35 @@ and on again? and again and again</string>
                                                         </connections>
                                                     </view>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="1tm-vj-TYj" firstAttribute="height" secondItem="Ij9-wS-Q4s" secondAttribute="height" id="Pke-rL-zy5"/>
+                                                    <constraint firstItem="1tm-vj-TYj" firstAttribute="width" secondItem="Ij9-wS-Q4s" secondAttribute="width" id="dOI-xD-1pA"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ij9-wS-Q4s" firstAttribute="width" secondItem="C7h-OC-EVR" secondAttribute="width" id="zca-KT-D0G"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="UL6-fm-viA" firstAttribute="leading" secondItem="syH-7P-ao6" secondAttribute="leading" constant="30" id="8fh-el-65g"/>
-                                    <constraint firstAttribute="trailing" secondItem="UL6-fm-viA" secondAttribute="trailing" constant="30" id="DFM-hv-HCA"/>
-                                    <constraint firstItem="UL6-fm-viA" firstAttribute="top" secondItem="syH-7P-ao6" secondAttribute="top" constant="20" id="Hmd-VL-e7Z"/>
+                                    <constraint firstItem="UL6-fm-viA" firstAttribute="centerX" secondItem="syH-7P-ao6" secondAttribute="centerX" id="4mn-72-V1h"/>
                                     <constraint firstAttribute="bottom" secondItem="UL6-fm-viA" secondAttribute="bottom" constant="30" id="JqI-QX-Zhp"/>
+                                    <constraint firstItem="UL6-fm-viA" firstAttribute="leading" secondItem="syH-7P-ao6" secondAttribute="leading" constant="50" id="kqQ-Rs-b8h"/>
+                                    <constraint firstAttribute="trailing" secondItem="UL6-fm-viA" secondAttribute="trailing" constant="50" id="ztu-91-GoK"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="xMp-OA-Mt4" secondAttribute="trailing" id="1et-Nn-9oC"/>
                             <constraint firstItem="syH-7P-ao6" firstAttribute="bottom" secondItem="JVr-dO-XiR" secondAttribute="bottom" id="2Ez-w5-p9n"/>
-                            <constraint firstItem="syH-7P-ao6" firstAttribute="trailing" secondItem="JVr-dO-XiR" secondAttribute="trailing" id="LQB-CI-K6E"/>
-                            <constraint firstItem="xMp-OA-Mt4" firstAttribute="leading" secondItem="JVr-dO-XiR" secondAttribute="leading" id="Rru-ui-R6i"/>
-                            <constraint firstItem="syH-7P-ao6" firstAttribute="leading" secondItem="JVr-dO-XiR" secondAttribute="leading" id="SwD-Nm-Zwq"/>
+                            <constraint firstItem="syH-7P-ao6" firstAttribute="top" secondItem="xMp-OA-Mt4" secondAttribute="bottom" id="59a-Jv-kCc"/>
+                            <constraint firstItem="syH-7P-ao6" firstAttribute="width" secondItem="xMp-OA-Mt4" secondAttribute="width" id="Dga-En-aOu"/>
+                            <constraint firstItem="xMp-OA-Mt4" firstAttribute="centerX" secondItem="JVr-dO-XiR" secondAttribute="centerX" id="SuM-Ex-JOR"/>
+                            <constraint firstItem="syH-7P-ao6" firstAttribute="centerX" secondItem="xMp-OA-Mt4" secondAttribute="centerX" id="aLx-yd-lc2"/>
                             <constraint firstItem="xMp-OA-Mt4" firstAttribute="top" secondItem="JVr-dO-XiR" secondAttribute="top" id="bSu-3f-KzC"/>
-                            <constraint firstItem="xMp-OA-Mt4" firstAttribute="height" secondItem="syH-7P-ao6" secondAttribute="height" id="r8T-ba-QfV"/>
+                            <constraint firstItem="xMp-OA-Mt4" firstAttribute="width" secondItem="JVr-dO-XiR" secondAttribute="width" id="cp1-ZF-tNr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Je4-MK-6gy"/>
                     </view>
@@ -419,8 +424,8 @@ and on again? and again and again</string>
                         <outlet property="btnCLbl" destination="ZDe-bq-74Z" id="k8h-hD-YMM"/>
                         <outlet property="btnD" destination="1tm-vj-TYj" id="dGe-na-K8L"/>
                         <outlet property="btnDLbl" destination="3VX-cN-6aQ" id="J3P-sZ-HXd"/>
-                        <outlet property="stepImg" destination="c5v-nW-S7u" id="p2j-kJ-g4b"/>
-                        <outlet property="stepTxtLbl" destination="PYR-Cf-VBx" id="eeG-Bw-pko"/>
+                        <outlet property="stepImg" destination="nev-8d-PjP" id="mye-Np-Aeg"/>
+                        <outlet property="stepTxtLbl" destination="bOy-U4-uxe" id="sgX-ZL-pEh"/>
                         <segue destination="RZa-cD-mde" kind="show" identifier="PopImageSegue" id="MsZ-8u-ROj"/>
                     </connections>
                 </viewController>
@@ -447,18 +452,18 @@ and on again? and again and again</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1552.8" y="31.03448275862069"/>
+            <point key="canvasLocation" x="1537.5" y="30"/>
         </scene>
         <!--Pop ImageVC-->
         <scene sceneID="i8C-Qg-eLf">
             <objects>
                 <viewController id="RZa-cD-mde" customClass="PopImageVC" customModule="IMT_workflow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IWf-7I-wGG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imt-splash" translatesAutoresizingMaskIntoConstraints="NO" id="wpZ-Ht-9TH">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -473,7 +478,7 @@ and on again? and again and again</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJs-pq-6f9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2233.125" y="32.74647887323944"/>
+            <point key="canvasLocation" x="2299" y="31"/>
         </scene>
     </scenes>
     <resources>
