@@ -24,47 +24,81 @@ class StepsVC: UIViewController, UIViewControllerPreviewingDelegate {
     
     // Variables
     var currentStep: Step = audioSteps[0]
-    var prevIndex: Int = 0
+    var options = [String]()
+    var values = [Int]()
+//    var prevIndex: Int = 0
+    var nextIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = issueSelection + " Troubleshooting"
+    }
+    
+    /* Upon Force Touch push, assign square area to remain unblurred */
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        var currentStepOptions = Array(currentStep.options.keys)
-
+        currentStep = audioSteps[nextIndex]
+        options = Array(currentStep.options.keys)
+        values = Array(currentStep.options.values)
+        
+        // Setup the new step
         stepTxtLbl.text = currentStep.text
         stepImg.image = currentStep.image
-        btnALbl.text = currentStepOptions[0]
-        btnBLbl.text = currentStepOptions[1]
-        btnCLbl.text = currentStepOptions[1]
-        btnDLbl.text = currentStepOptions[1]
+        stepImg.layer.cornerRadius = 5
+        stepImg.clipsToBounds = true
+        btnALbl.text = options[0]
+        if options.count >= 2 {
+            btnB.isHidden = false
+            btnBLbl.isHidden = false
+            btnBLbl.text = options[1]
+        } else {
+            btnB.isHidden = true
+            btnBLbl.isHidden = true
+        }
+        if options.count >= 3 {
+            btnC.isHidden = false
+            btnCLbl.isHidden = false
+            btnCLbl.text = options[2]
+        } else {
+            btnC.isHidden = true
+            btnCLbl.isHidden = true
+        }
+        if options.count == 4 {
+            btnC.isHidden = false
+            btnDLbl.isHidden = false
+            btnDLbl.text = options[3]
+        } else {
+            btnD.isHidden = true
+            btnDLbl.isHidden = true
+        }
+        
+        for button in [btnA!, btnB!, btnC!, btnD!] {
+            customButton(btn: button)
+        }
         
         // Check if device has force touch screen
         if (traitCollection.forceTouchCapability == .available){
-            registerForPreviewing(with: self as! UIViewControllerPreviewingDelegate, sourceView: view)
-        } else {
-//            let longPress = UILongPressGestureRecognizer(target: self, action: "longPressHandler:")
-//            stepImg.addGestureRecognizer(longPress)
+            registerForPreviewing(with: self as UIViewControllerPreviewingDelegate, sourceView: view)
         }
     }
     
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        if currentStep.image != nil {
         previewingContext.sourceRect = CGRect(origin: CGPoint(x: stepImg.frame.origin.x, y: stepImg.frame.origin.y), size: CGSize(width: stepImg.frame.width, height: stepImg.frame.height))
         return PopImageVC()
+        } else {
+            return nil
+        }
     }
     
+    /* Upon Force Touch pop, assign view controller to segue to */
     func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
-//        present(PopImageVC(), animated: true, completion: nil)
         performSegue(withIdentifier: "PopImageSegue", sender: nil)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        customButton(btn: btnA!)
-        customButton(btn: btnB!)
-        customButton(btn: btnC!)
-        customButton(btn: btnD!)
-    }
     
+    /* Customize appearance of options buttons */
     func customButton(btn: UIView!) {
         btn.clipsToBounds = true
         btn.layer.masksToBounds = false
@@ -72,48 +106,54 @@ class StepsVC: UIViewController, UIViewControllerPreviewingDelegate {
         btn.layer.shadowRadius = 5
         btn.layer.shadowOpacity = 0.4
         btn.layer.shadowOffset = CGSize(width: 1, height: 2)
-        btn.layer.shadowColor = UIColor.black.cgColor
-        btn.backgroundColor = UIColor(red: 153/255, green: 0, blue: 0, alpha: 1)
+        btn.layer.shadowColor = APU_COLOR().black.cgColor
+        btn.backgroundColor = APU_COLOR().red
+    }
+    
+    /* Change button color to APU_COLOR().darkRed and then back again */
+    func animateColorChange(btn: UIView) {
+        btn.backgroundColor = APU_COLOR().red
+        UIView.animate(withDuration: 0.25, animations: { () -> Void in
+            btn.backgroundColor = APU_COLOR().darkRed
+        }, completion: { finished in
+            UIView.animate(withDuration: 0.25, animations: { () -> Void in
+                btn.backgroundColor = APU_COLOR().red
+            }, completion: nil)
+        })
+        
+        viewWillAppear(true)    // Reload viewWillAppear
+    }
+    
+    func stepsAreFinished() -> Bool {
+        if nextIndex == 999 {
+            performSegue(withIdentifier: "FinishSegue", sender: nil)
+            return true
+        }
+        return false
     }
     
     @IBAction func btnAPressed(_ sender: Any) {
-        self.btnA.backgroundColor = UIColor(red: 153/255, green: 0, blue: 0, alpha: 1)
-        UIView.animate(withDuration: 0.25, animations: { () -> Void in
-            self.btnA.backgroundColor = UIColor(red: 125/255, green: 0, blue: 0, alpha: 1);
-        }, completion: { finished in
-            UIView.animate(withDuration: 0.25, animations: { () -> Void in
-                self.btnA.backgroundColor = UIColor(red: 153/255, green: 0, blue: 0, alpha: 1)
-            }, completion: nil)
-        })
+        if !stepsAreFinished() {
+            nextIndex = values[0]
+            animateColorChange(btn: btnA)
+        }
     }
     @IBAction func btnBPressed(_ sender: Any) {
-        self.btnB.backgroundColor = UIColor(red: 153/255, green: 0, blue: 0, alpha: 1)
-        UIView.animate(withDuration: 0.25, animations: { () -> Void in
-            self.btnB.backgroundColor = UIColor(red: 125/255, green: 0, blue: 0, alpha: 1);
-        }, completion: { finished in
-            UIView.animate(withDuration: 0.25, animations: { () -> Void in
-                self.btnB.backgroundColor = UIColor(red: 153/255, green: 0, blue: 0, alpha: 1)
-            }, completion: nil)
-        })
+        if !stepsAreFinished() {
+            nextIndex = values[1]
+            animateColorChange(btn: btnB)
+        }
     }
     @IBAction func btnCPressed(_ sender: Any) {
-        self.btnC.backgroundColor = UIColor(red: 153/255, green: 0, blue: 0, alpha: 1)
-        UIView.animate(withDuration: 0.25, animations: { () -> Void in
-            self.btnC.backgroundColor = UIColor(red: 125/255, green: 0, blue: 0, alpha: 1);
-        }, completion: { finished in
-            UIView.animate(withDuration: 0.25, animations: { () -> Void in
-                self.btnC.backgroundColor = UIColor(red: 153/255, green: 0, blue: 0, alpha: 1)
-            }, completion: nil)
-        })
+        if !stepsAreFinished() {
+            nextIndex = values[2]
+            animateColorChange(btn: btnC)
+        }
     }
     @IBAction func btnDPressed(_ sender: Any) {
-        self.btnD.backgroundColor = UIColor(red: 153/255, green: 0, blue: 0, alpha: 1)
-        UIView.animate(withDuration: 0.25, animations: { () -> Void in
-            self.btnD.backgroundColor = UIColor(red: 125/255, green: 0, blue: 0, alpha: 1);
-        }, completion: { finished in
-            UIView.animate(withDuration: 0.25, animations: { () -> Void in
-                self.btnD.backgroundColor = UIColor(red: 153/255, green: 0, blue: 0, alpha: 1)
-            }, completion: nil)
-        })
+        if !stepsAreFinished() {
+            nextIndex = values[3]
+            animateColorChange(btn: btnD)
+        }
     }
 }

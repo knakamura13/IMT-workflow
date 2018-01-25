@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BF1E2C212007CC40000FE331 /* Initialized_Steps.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1E2C202007CC40000FE331 /* Initialized_Steps.swift */; };
 		BF45B82E20135DAE007D0CF8 /* PopImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45B82D20135DAE007D0CF8 /* PopImageVC.swift */; };
+		BF5311ED201549B100FC6E34 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5311EC201549B100FC6E34 /* Constants.swift */; };
+		BF5311EF201553C600FC6E34 /* FinishVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5311EE201553C600FC6E34 /* FinishVC.swift */; };
 		BF9ACC801FF9C24B00D75A2E /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC7F1FF9C24B00D75A2E /* Step.swift */; };
 		BF9ACC821FF9C25900D75A2E /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC811FF9C25900D75A2E /* Issue.swift */; };
 		BF9ACC841FF9C4ED00D75A2E /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9ACC831FF9C4ED00D75A2E /* MyTableViewCell.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		BF1E2C202007CC40000FE331 /* Initialized_Steps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initialized_Steps.swift; sourceTree = "<group>"; };
 		BF45B82D20135DAE007D0CF8 /* PopImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopImageVC.swift; sourceTree = "<group>"; };
+		BF5311EC201549B100FC6E34 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF5311EE201553C600FC6E34 /* FinishVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishVC.swift; sourceTree = "<group>"; };
 		BF9ACC7F1FF9C24B00D75A2E /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
 		BF9ACC811FF9C25900D75A2E /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 		BF9ACC831FF9C4ED00D75A2E /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 				BFB00D5B1FF591D000B33FB6 /* IssuesVC.swift */,
 				BF9ACC851FF9E6BF00D75A2E /* StepsVC.swift */,
 				BF45B82D20135DAE007D0CF8 /* PopImageVC.swift */,
+				BF5311EE201553C600FC6E34 /* FinishVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 		BFB00D591FF5893B00B33FB6 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				BF5311EC201549B100FC6E34 /* Constants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -324,7 +330,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF9ACC861FF9E6BF00D75A2E /* StepsVC.swift in Sources */,
+				BF5311ED201549B100FC6E34 /* Constants.swift in Sources */,
 				BF9ACC841FF9C4ED00D75A2E /* MyTableViewCell.swift in Sources */,
+				BF5311EF201553C600FC6E34 /* FinishVC.swift in Sources */,
 				BFB00D281FF57D2900B33FB6 /* TeamsVC.swift in Sources */,
 				BFB00D261FF57D2900B33FB6 /* AppDelegate.swift in Sources */,
 				BF9ACC801FF9C24B00D75A2E /* Step.swift in Sources */,

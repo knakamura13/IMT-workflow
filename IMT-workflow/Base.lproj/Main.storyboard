@@ -24,7 +24,6 @@
             <objects>
                 <navigationController id="18p-Au-Pjv" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="dPy-fx-TZX">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,7 +47,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TeamsVC" customModule="IMT_workflow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SRr-Vf-ykj">
@@ -118,7 +117,7 @@
             <objects>
                 <viewController title="Team Issues" id="Aa8-oQ-RNz" customClass="IssuesVC" customModule="IMT_workflow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sM2-16-SHc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar hidden="YES" contentMode="redraw" placeholder="Search" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNg-Cu-D3k">
@@ -233,7 +232,7 @@
             <objects>
                 <viewController id="3CW-QM-BRO" customClass="StepsVC" customModule="IMT_workflow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JVr-dO-XiR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMp-OA-Mt4" userLabel="topView">
@@ -248,11 +247,11 @@ Label</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t4J-h2-Tn5">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="t4J-h2-Tn5">
                                         <rect key="frame" x="121.66666666666667" y="121" width="133.33333333333331" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="QJJ-kD-nFB"/>
-                                            <constraint firstAttribute="width" secondItem="t4J-h2-Tn5" secondAttribute="height" multiplier="4:3" id="q2f-p3-7nq"/>
+                                            <constraint firstAttribute="width" secondItem="t4J-h2-Tn5" secondAttribute="height" multiplier="1:1" id="q2f-p3-7nq"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -456,7 +455,7 @@ Label</string>
             <objects>
                 <viewController id="RZa-cD-mde" customClass="PopImageVC" customModule="IMT_workflow" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IWf-7I-wGG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imt-splash" translatesAutoresizingMaskIntoConstraints="NO" id="wpZ-Ht-9TH">

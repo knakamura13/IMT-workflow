@@ -10,7 +10,7 @@ import UIKit
 
 class Step {
     // Base variables
-    fileprivate var _image: UIImage                                                 // Image for the Step, if necessary
+    fileprivate var _image: UIImage?                                                // Image for the Step, if necessary
     fileprivate var _title: String = "Title"                                        // The issue name or title
     fileprivate var _text: String = "Have you tried turning it off and on again?"   // The main question or instructions for the Step
     fileprivate var _options: [String : Int] = ["Yes" : 1, "No" : 2]                // Dictionary of options/buttons and a correesponding index for navigation
@@ -18,7 +18,7 @@ class Step {
     fileprivate var _prev: Int = 0                                                  // Index of the most recently viewed Step
     
     // Getters
-    var image: UIImage {
+    var image: UIImage? {
         get {
             return _image
         }
@@ -68,7 +68,7 @@ class Step {
     }
     
     // Initializer
-    init(image: UIImage, title: String, text: String, options: [String : Int], index: Int, prev: Int) {
+    init(image: UIImage?, title: String, text: String, options: [String : Int], index: Int, prev: Int) {
         self._image = image
         self._title = title
         self._text = text
